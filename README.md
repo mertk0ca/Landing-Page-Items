@@ -1,1 +1,0 @@
-# Mert-Koca-Landing-Page

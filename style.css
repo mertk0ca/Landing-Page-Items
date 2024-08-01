@@ -14,6 +14,88 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+}
+
+.gradienttext1 {
+    background: linear-gradient(#227ED4, #8952E3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 75px;
+}
+
+.gradienttext2 {
+    background: linear-gradient(#D4D122, #52E374);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 75px;
+    padding-left: 20px;
+}
+
+.gradienttext3 {
+    background: linear-gradient(#7222D4, #E35285);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 75px;
+}
+
+.flex-container {
+    width: 100%;
+    height: auto;
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-box {
+    width: 800px;
+    height: 425px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iframe-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.iframe-container-reverse {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+figcaption {
+    color: #5D5D63;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
 ul {
@@ -85,14 +167,18 @@ body {
     opacity: 0.5;
     transition: opacity 0.25s;
     border-radius: 25px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .featured-wrapper .arrows label::before {
-    left: -50px;
+    left: -25px;
 }
 
 .featured-wrapper .arrows label::after {
-    right: -50px;
+    right: -25px;
 }
 
 .featured-wrapper .dots {

@@ -48,7 +48,7 @@ body {
     height: auto;
     color: black;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -93,9 +93,12 @@ iframe {
 figcaption {
     color: #5D5D63;
     font-size: 15px;
-    padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
+}
+
+.info2 {
+    padding-left: 25px;
 }
 
 ul {

@@ -101,6 +101,40 @@ figcaption {
     padding-left: 25px;
 }
 
+.buttontext {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.button {
+    justify-content: flex-start;
+    width: 128px;
+    height: 40px;
+    background-color: #FFD350;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 30px;
+}
+
+.button2 {
+    justify-content: flex-start;
+    width: 128px;
+    height: 40px;
+    background-color: #FFD350;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
 ul {
     list-style: none;
 }

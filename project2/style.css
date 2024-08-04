@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
+    padding: 100px;
     background-color: #F7F8FB;
 }
 
@@ -36,7 +36,8 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 75px;
+    padding-top: 175px;
+    font-weight: 500;
 }
 
 .gradienttext2 {
@@ -44,8 +45,8 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 75px;
-    padding-left: 20px;
+    padding-top: 175px;
+    font-weight: 500;
 }
 
 .gradienttext3 {
@@ -53,7 +54,8 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 75px;
+    padding-top: 175px;
+    font-weight: 500;
 }
 
 .card {
@@ -71,16 +73,16 @@ input[type=radio] {
     width: 100%;
     height: auto;
     color: black;
-    font-size: 60px;
+    font-size: 40px;
     text-align: left;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
 .flex-box {
     width: 800px;
-    height: 425px;
+    height: 525px;
     background-color: white;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -95,28 +97,22 @@ input[type=radio] {
 .iframe-container {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.iframe-container-reverse {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    display: grid;
+    justify-content: center;
+    text-align: center;
 }
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 200%;
     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    /*background-color: #227ED4;*/
 }
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     max-height: 600px;
     height: 100%;
     transform-style: preserve-3d;
@@ -136,82 +132,62 @@ iframe {
 figcaption {
     color: #5D5D63;
     font-size: 15px;
-    padding-right: 30px;
     padding-top: 30px;
-}
-
-.info2 {
-    padding-left: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .buttontext {
     font-size: 16px;
     font-weight: 500;
-    padding-top: 10px;
+    padding-top: 27px;
     text-align: center;
 }
 
 .button {
     justify-content: flex-start;
-    width: 128px;
-    height: 40px;
+    width: 600px;
+    height: 75px;
     background-color: #FFD350;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin-top: 30px;
-}
-
-.button2 {
-    justify-content: flex-start;
-    width: 128px;
-    height: 40px;
-    background-color: #FFD350;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-top: 35px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 #item-1:checked~.cards #slide-3,
 #item-2:checked~.cards #slide-1,
 #item-3:checked~.cards #slide-2 {
-    transform: translatex(-20%) scale(.8);
-    opacity: 0.4;
+    transform: translatex(-50%) scale(.8);
+    /*60*/
+    opacity: 0.5;
     z-index: 0;
-    -webkit-transform: translatex(-20%) scale(.8);
-    -moz-transform: translatex(-20%) scale(.8);
-    -ms-transform: translatex(-20%) scale(.8);
-    -o-transform: translatex(-20%) scale(.8);
-    /*pointer-events: none;*/
+    -webkit-transform: translatex(-50%) scale(.8);
+    -moz-transform: translatex(-50%) scale(.8);
+    -ms-transform: translatex(-50%) scale(.8);
+    -o-transform: translatex(-50%) scale(.8);
 }
 
 #item-1:checked~.cards #slide-2,
 #item-2:checked~.cards #slide-3,
 #item-3:checked~.cards #slide-1 {
-    transform: translatex(20%) scale(.8);
-    opacity: 0.4;
+    transform: translatex(50%) scale(.8);
+    /*60*/
+    opacity: 0.5;
     z-index: 0;
-    -webkit-transform: translatex(20%) scale(.8);
-    -moz-transform: translatex(20%) scale(.8);
-    -ms-transform: translatex(20%) scale(.8);
-    -o-transform: translatex(20%) scale(.8);
-    /*pointer-events: none;*/
+    -webkit-transform: translatex(50%) scale(.8);
+    -moz-transform: translatex(50%) scale(.8);
+    -ms-transform: translatex(50%) scale(.8);
+    -o-transform: translatex(50%) scale(.8);
 }
 
 #item-1:checked~.cards #slide-1,
 #item-2:checked~.cards #slide-2,
 #item-3:checked~.cards #slide-3 {
-    transform: translatex(0) scale(1);
+    transform: translatex() scale(1);
     opacity: 1;
     z-index: 1;
-    -webkit-transform: translatex(0) scale(1);
-    -moz-transform: translatex(0) scale(1);
-    -ms-transform: translatex(0) scale(1);
-    -o-transform: translatex(0) scale(1);
+    -webkit-transform: translatex() scale(1);
+    -moz-transform: translatex() scale(1);
+    -ms-transform: translatex() scale(1);
+    -o-transform: translatex() scale(1);
 }

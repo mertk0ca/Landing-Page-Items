@@ -157,8 +157,8 @@ a {
 
 a:hover {
     letter-spacing: 0.15em;
-    background: #FFD350;
-    box-shadow: 0 0 35px var(--clr);
+    background: #ffc516;
+    box-shadow: 0 0 25px var(--clr);
 }
 
 #item-1:checked~.cards #slide-3,

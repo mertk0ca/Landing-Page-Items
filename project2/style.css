@@ -36,7 +36,7 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 175px;
+    padding-top: 190px;
     font-weight: 500;
 }
 
@@ -45,7 +45,7 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 175px;
+    padding-top: 190px;
     font-weight: 500;
 }
 
@@ -54,7 +54,7 @@ input[type=radio] {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-top: 175px;
+    padding-top: 190px;
     font-weight: 500;
 }
 
@@ -82,7 +82,7 @@ input[type=radio] {
 
 .flex-box {
     width: 800px;
-    height: 525px;
+    height: 575px;
     background-color: white;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -107,7 +107,7 @@ iframe {
     height: 200%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    /*background-color: #227ED4;*/
+    /* background-color: #227ED4;*/
 }
 
 .container {
@@ -132,7 +132,7 @@ iframe {
 figcaption {
     color: #5D5D63;
     font-size: 15px;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -154,6 +154,30 @@ figcaption {
     border-bottom-right-radius: 8px;
 }
 
+a {
+    position: relative;
+    background-color: #FFD350;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 200px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    text-decoration: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-top: 30px;
+}
+
+a:hover {
+    letter-spacing: 0.15em;
+    background: #FFD350;
+    box-shadow: 0 0 35px var(--clr);
+}
+
 #item-1:checked~.cards #slide-3,
 #item-2:checked~.cards #slide-1,
 #item-3:checked~.cards #slide-2 {
@@ -165,6 +189,18 @@ figcaption {
     -moz-transform: translatex(-50%) scale(.8);
     -ms-transform: translatex(-50%) scale(.8);
     -o-transform: translatex(-50%) scale(.8);
+}
+
+#item-1:checked~.cards #slide-3 a,
+#item-2:checked~.cards #slide-1 a,
+#item-1:checked~.cards #slide-2 a {
+    pointer-events: none;
+}
+
+#item-1:checked~.cards #slide-3 iframe,
+#item-2:checked~.cards #slide-1 iframe,
+#item-1:checked~.cards #slide-2 iframe {
+    pointer-events: none;
 }
 
 #item-1:checked~.cards #slide-2,
@@ -180,6 +216,18 @@ figcaption {
     -o-transform: translatex(50%) scale(.8);
 }
 
+#item-1:checked~.cards #slide-2 a,
+#item-2:checked~.cards #slide-3 a,
+#item-3:checked~.cards #slide-1 a {
+    pointer-events: none;
+}
+
+#item-1:checked~.cards #slide-2 iframe,
+#item-2:checked~.cards #slide-3 iframe,
+#item-3:checked~.cards #slide-1 iframe {
+    pointer-events: none;
+}
+
 #item-1:checked~.cards #slide-1,
 #item-2:checked~.cards #slide-2,
 #item-3:checked~.cards #slide-3 {
@@ -190,4 +238,14 @@ figcaption {
     -moz-transform: translatex() scale(1);
     -ms-transform: translatex() scale(1);
     -o-transform: translatex() scale(1);
+}
+
+#item-2:checked~.cards #slide-1 a,
+#item-3:checked~.cards #slide-2 a {
+    pointer-events: none;
+}
+
+#item-2:checked~.cards #slide-1 iframe,
+#item-3:checked~.cards #slide-2 iframe {
+    pointer-events: none;
 }

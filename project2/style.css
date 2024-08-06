@@ -31,7 +31,7 @@ input[type=radio] {
 }
 
 .gradienttext1 {
-    background: linear-gradient(#227ED4, #8952E3);
+    background: linear-gradient(to bottom right, #227ED4, #8952E3);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,7 +40,7 @@ input[type=radio] {
 }
 
 .gradienttext2 {
-    background: linear-gradient(#D4D122, #52E374);
+    background: linear-gradient(to bottom right, #D4D122, #52E374);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -49,7 +49,7 @@ input[type=radio] {
 }
 
 .gradienttext3 {
-    background: linear-gradient(#7222D4, #E35285);
+    background: linear-gradient(to bottom right, #7222D4, #E35285);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
